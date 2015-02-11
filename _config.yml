@@ -1,0 +1,11 @@
+# Site settings
+title: Fundacja Makerspace Lublin 
+email: fundacja@makerspace-lbn.pl
+description:
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://makerspace-lbn.pl" # the base hostname & protocol for your site
+twitter_username: 
+github_username:
+
+# Build settings
+markdown: kramdown
