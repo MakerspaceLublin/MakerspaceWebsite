@@ -11,3 +11,6 @@ collections:
   events:
     output: true
     permalink: /events/:path/
+  workshops:
+    output: true
+    permalink: /workshops/:path/

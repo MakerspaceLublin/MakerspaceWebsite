@@ -32,6 +32,34 @@ layout: default
     </section>
     -->
     
+    <!-- Workshops Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="margin-bottom: 10px">
+                    <h2>Warsztaty</h2>
+                    <hr class="star-primary">
+                    <h5>kliknij na wybrane warsztaty aby zobaczyć szczegóły</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for workshop in site.workshops %}
+                  <div class="col-sm-4 portfolio-item">
+                    <a href="{{ workshop.url | prepend: site.baseurl }}" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src={{site.baseUrl}}/{{ workshop.image }} class="img-responsive" alt="{{workshop.title}}">
+                    </a>
+                </div>
+                {% endfor %}      
+            </div>
+        </div>
+    </section>
+    
     <!-- Events Grid Section -->
     <section id="portfolio">
         <div class="container">
@@ -60,6 +88,7 @@ layout: default
         </div>
     </section>
     
+
     <!-- Newsletter Grid Section
     <section id="portfolio">
         <div class="container">
